@@ -16,26 +16,30 @@
         android:layout_height="wrap_content"
         android:src="@drawable/yellow3_mdpi"
         android:onClick="changeColor"
-        />
+        android:layout_margin="5dp"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/yellow3_hdpi"/>
+        android:src="@drawable/yellow3_hdpi"
+        android:layout_margin="5dp"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/yellow3_xhdpi"/>
+        android:src="@drawable/yellow3_xhdpi"
+        android:layout_margin="5dp"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/yellow3_xxhdpi"/>
+        android:src="@drawable/yellow3_xxhdpi"
+        android:layout_margin="5dp"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/yellow3_xxxhdpi"/>
+        android:src="@drawable/yellow3_xxxhdpi"
+        android:layout_margin="5dp"/>
 
 </LinearLayout>

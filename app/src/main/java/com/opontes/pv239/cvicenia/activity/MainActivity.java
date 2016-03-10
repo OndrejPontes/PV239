@@ -17,6 +17,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity
 {
+    public final static String TODO_LIST = "todoList";
 
     ListView seminarList;
 

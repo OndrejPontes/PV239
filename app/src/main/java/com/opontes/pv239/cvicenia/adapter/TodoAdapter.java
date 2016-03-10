@@ -57,7 +57,9 @@ public class TodoAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "You Clicked " + getItem(position).getDescription(), Toast.LENGTH_LONG).show();
+                Todo t = getItem(position);
+                t.setCheck(!t.isCheck());
+                notifyDataSetChanged();
             }
         });
 
@@ -66,10 +68,4 @@ public class TodoAdapter extends BaseAdapter {
 
         return convertView;
     }
-
-    private static class ViewHolder {
-        TextView descrition;
-        CheckBox check;
-    }
-
 }
