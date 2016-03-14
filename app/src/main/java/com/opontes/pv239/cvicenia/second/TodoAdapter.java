@@ -1,4 +1,4 @@
-package com.opontes.pv239.cvicenia.adapter;
+package com.opontes.pv239.cvicenia.second;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,11 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.opontes.pv239.cvicenia.R;
-import com.opontes.pv239.cvicenia.data.Seminar;
-import com.opontes.pv239.cvicenia.data.Todo;
+import com.opontes.pv239.cvicenia.second.Todo;
 
 import java.util.List;
 

@@ -1,17 +1,13 @@
-package com.opontes.pv239.cvicenia.adapter;
+package com.opontes.pv239.cvicenia.main;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.opontes.pv239.cvicenia.R;
-import com.opontes.pv239.cvicenia.activity.TodoActivity;
-import com.opontes.pv239.cvicenia.data.Seminar;
 
 import java.util.List;
 

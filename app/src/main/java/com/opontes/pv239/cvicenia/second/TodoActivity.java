@@ -1,4 +1,4 @@
-package com.opontes.pv239.cvicenia.activity;
+package com.opontes.pv239.cvicenia.second;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,14 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.opontes.pv239.cvicenia.R;
-import com.opontes.pv239.cvicenia.adapter.TodoAdapter;
-import com.opontes.pv239.cvicenia.data.Todo;
+import com.opontes.pv239.cvicenia.main.MainActivity;
 
 import java.util.ArrayList;
 
@@ -33,7 +31,11 @@ public class TodoActivity extends AppCompatActivity {
 
         setResult(RESULT_OK, new Intent());
 
-        todoList = loadTodos();
+        if (savedInstanceState == null){
+            todoList = loadTodos();
+        } else {
+            todoList = savedInstanceState.getParcelableArrayList(MainActivity.TODO_LIST);
+        }
         ListView todoListView = (ListView) findViewById(R.id.list_of_todos);
         TodoAdapter todoAdapter = new TodoAdapter(todoList, this);
         todoListView.setAdapter(todoAdapter);
@@ -42,22 +44,9 @@ public class TodoActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
     protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
         outState.putParcelableArrayList(MainActivity.TODO_LIST, todoList);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-
-        todoList = savedInstanceState.getParcelableArrayList(MainActivity.TODO_LIST);
+        super.onSaveInstanceState(outState);
     }
 
     private ArrayList loadTodos() {

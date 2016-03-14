@@ -1,4 +1,4 @@
-package com.opontes.pv239.cvicenia.activity;
+package com.opontes.pv239.cvicenia.first;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

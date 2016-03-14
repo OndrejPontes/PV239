@@ -1,4 +1,4 @@
-package com.opontes.pv239.cvicenia.activity;
+package com.opontes.pv239.cvicenia.main;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,8 +9,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.opontes.pv239.cvicenia.R;
-import com.opontes.pv239.cvicenia.data.Seminar;
-import com.opontes.pv239.cvicenia.adapter.SeminarAdapter;
+import com.opontes.pv239.cvicenia.first.SquareActivity;
+import com.opontes.pv239.cvicenia.second.TodoActivity;
 
 import java.util.ArrayList;
 import java.util.List;

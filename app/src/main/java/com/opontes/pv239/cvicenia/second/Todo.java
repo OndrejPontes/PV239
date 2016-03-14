@@ -1,4 +1,4 @@
-package com.opontes.pv239.cvicenia.data;
+package com.opontes.pv239.cvicenia.second;
 
 import android.os.Parcel;
 import android.os.Parcelable;
